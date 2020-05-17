@@ -1,0 +1,28 @@
+﻿<div>
+    <h2>@ViewData["Message"]</h2>
+    <h2>@ViewData["CurrentDate"]</h2>
+</div>
+
+<div>
+    <ol>
+        @foreach (string car in (string[])ViewData["Cars"])
+        {
+            <li>@car</li>
+        }
+    </ol>
+</div>
+
+<!--ViewBag-->
+
+<div class="container-fluid">
+    <h2>@ViewBag.Message</h2>
+    <h2>@ViewBag.CurrentDateTime</h2>
+    
+    <ul>
+        @foreach (string i in (string[])ViewBag.CarList)
+        {
+            <li>@i</li>
+        }
+       
+    </ul>
+</div>

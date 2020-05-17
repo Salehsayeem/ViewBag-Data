@@ -1,0 +1,16 @@
+﻿@model IEnumerable<MyFirstMVCProject.Models.Customer>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+@foreach (var customer in ViewBag.Customer)
+{
+<tr>
+    <td>@customer.Id</td>
+    <td>@customer.Name</td>
+    <td>@customer.Address</td>
+</tr>
+}
